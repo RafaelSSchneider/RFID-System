@@ -1,0 +1,30 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#tagDisplay{
+    position: relative;
+    background-color: #545863;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    margin-right: 0;
+    margin-left: auto;
+}
+#counter{
+    position: absolute;
+    display: flex;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    justify-self: center;
+    
+}
+#test{
+    display: flex;
+}
