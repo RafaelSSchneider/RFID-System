@@ -2,29 +2,100 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #191924;
+    overflow:hidden
 }
 #tagDisplay{
-    position: relative;
-    background-color: #545863;
+    background-color: #191924;
     color: white;
     display: flex;
     flex-direction: column;
     width: 50vw;
     height: 100vh;
-    margin-right: 0;
-    margin-left: auto;
+    margin-left: 30px;
+    margin-top: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: large;
 }
 #counter{
-    position: absolute;
+    background-color: #0D0B14;
     display: flex;
-    margin-left: 0;
-    margin-right: auto;
-    font-size: 100px;
-    font-family: 'Roboto', sans-serif;
-    align-self: center;
-    justify-self: center;
+    width: 50vw;    
+    height: 100vh;
+    font-size: 500px;
+    color: white;
+    justify-content: center;
+    align-items: center;
     
 }
-#test{
+.tagInformation{
+    display: flex;
+    z-index: -1;
+    position: fixed;
+}
+#tagDisplay li{
+    display: flex;
+    background-color: #191924;
+    list-style-type: none;
+    margin-top: 2px;
+}
+.connectionInformation{
+    position: fixed;
+    z-index: 1;
+    background-color: #191924;
+    color: white;
+    display: flex;
+    width: 50vw;
+    height: 5vw;
+    justify-content: flex-end;
+    top: 92vh;
+    left: 50vw;
+}
+#broker{
+    display: flex;
+    flex-direction: column;
+    width: 2,3vw;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+#reader{
+    display: flex;
+    flex-direction: column;
+    width: 2,3vw;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+#brokerStatus{
+    height: 22px;
+    width: 22px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    display: inline-block;
+    align-self: center;
+}
+#dataStatus{
+    height: 22px;
+    width: 22px;
+    background-color: #05FF00;
+    border-radius: 50%;
+    display: inline-block;
+    align-self: center;
+}
+
+#settingsIcon{
+    display: inline-block;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+#settings{
     display: flex;
 }

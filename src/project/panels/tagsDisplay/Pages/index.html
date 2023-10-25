@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MQTT Display</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.js" type="text/javascript"></script>
     <script src="../Scripts/index.js" defer></script>
     <link rel="stylesheet" href="../Styles/index.css">
 </head>
 <body>
-    <div id="logger"></div>
-    <div id="test">
+    <section class="tagInformation">
         <div id="counter">0</div>
-        <ul id="tagDisplay"></ul>
+        <ul id="tagDisplay">
+        </ul>
+    </section>
+
+    <div class="connectionInformation">
+        <div id="broker">
+            <div id="brokerStatus"></div>
+            <span id="connectionType">MQTT Broker</span>
+        </div>
+        <div id="reader">
+            <div id="dataStatus"></div>
+            <span id="connectionType">Reader</span>
+        </div>
+        <div id="settings">
+            <img src="../icons/settingsIcon.svg" alt="Settings" id="settingsIcon">
+        </div>
     </div>
+
 </body>
 
 </html>
