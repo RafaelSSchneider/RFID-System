@@ -1,5 +1,6 @@
 from paho.mqtt import client as mqtt_client
 
+
 broker = '127.0.0.1'
 port = 1883
 topic = "ARD001/data"
